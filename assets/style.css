@@ -23,6 +23,7 @@ body {
   color: #b31111;
   padding: 3px;
 }
+
 #menu .menuLives img {
   height: 30px;
 }
@@ -31,7 +32,7 @@ body {
   height: 83vh;
 }
 #panel {
-  background-image: url(/assests/img/wall.png);
+  background-image: url(/assets/img/wall.png);
   height: 78vh;
   margin: 40px 0;
   display: flex;
@@ -42,13 +43,24 @@ body {
 
 .square {
   height: 150px;
-  border: 1px solid black;
+  border: 2px solid black;
   width: 150px;
+  margin: 20px;
 }
 .enemy {
-  background-image: url(/assests/img/ralph.png);
+  background-image: url(/assets/img/ralph.png);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
+
+.princess {
+  background-image: url(/assets/img/princess.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
 footer {
   width: 100%;
   padding: 30px 0;
