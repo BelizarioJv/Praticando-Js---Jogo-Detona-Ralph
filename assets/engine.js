@@ -4,12 +4,12 @@ const state = {
     enemy: document.querySelector(".enemy"),
     timeLeft: document.getElementById("timeLeft"),
     score: document.getElementById("score"),
-    life: document.querySelector("life"),
+    life: document.getElementById("life"),
   },
   values: {
     timeId: null,
     countDowmTimerId: setInterval(countDowm, 1000),
-    gameVelocity: 500,
+    gameVelocity: 800,
     hitPosition: 0,
     lifePlayer: 3,
     result: 0,
@@ -72,7 +72,6 @@ function addEventListenerHitBox() {
         } else if (square.classList.contains("princess")) {
           state.values.lifePlayer--;
           state.view.life.textContent = state.values.lifePlayer;
-          playSound();
         }
         state.values.hitPosition = null;
       }
